@@ -1,0 +1,48 @@
+{% comment %} 
+Check if a product is part of any Lookbook.
+Render the relevant Lookbook section on the product page if the product is included.
+{% endcomment %}
+
+{% comment %} 
+1. Loop through all lookbook metaobject entries
+2. Loop through products in lookbook
+3. If product ID in lookbook matches product ID of the product page, render image
+{% endcomment %}
+
+{% for lookbook_entry in shop.metaobjects.lookbook.values %}
+  {% for featured_product in lookbook_entry.products.value %}
+    {% if featured_product.id == product.id %}
+      {{ lookbook_entry.image_video | metafield_tag }}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% stylesheet %}
+  .lookbook-wrapper {
+    max-height: 1024px;
+    overflow: hidden;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Lookbook",
+  "tag": "section",
+  "class": "lookbook",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Lookbook section for Product Pages",
+      "info": "If the product is part of any lookbook, the lookbook images will render here. If the product is featured in multiple lookbooks, all images will render."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["product"]
+  }
+}
+{% endschema %}
