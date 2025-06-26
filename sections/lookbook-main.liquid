@@ -1,0 +1,56 @@
+{% liquid 
+  assign has_media = false
+  if section.settings.lookbook_metaobject != blank
+    assign has_media = true
+  endif
+%}
+
+{% if has_media == true %}
+  <div class="lookbook-wrapper">
+    {{ section.settings.lookbook_metaobject.image_video | metafield_tag }}
+  </div>
+{% else %}
+  <div class="lookbook-wrapper">
+    <placeholder-image
+          class="lookbook__image"
+          data-block-id="{{ section.id }}"
+          data-type="general"
+    ></placeholder-image>
+  </div>
+{% endif %}
+
+{% stylesheet %}
+  .lookbook-wrapper {
+    max-height: 1024px;
+    overflow: hidden;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Lookbook",
+  "tag": "section",
+  "class": "lookbook",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Select Lookbook",
+      "info": "Select a lookbook that you would like to display"
+    },
+    {
+      "type": "metaobject",
+      "id": "lookbook_metaobject",
+      "label": "Lookbook",
+      "metaobject_type": "lookbook"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lookbook"
+    }
+  ],
+  "disabled_on": {
+    "templates": ["product"]
+  }
+}
+{% endschema %}
