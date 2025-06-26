@@ -44,22 +44,14 @@
           "type": "_product-details",
           "static": true,
           "settings": {
-<<<<<<< HEAD
-            "gap": 28,
-            "sticky_details_desktop": true,
-=======
->>>>>>> staging
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-<<<<<<< HEAD
-=======
             "height": "fit",
             "details_position": "flex-start",
             "gap": 28,
             "sticky_details_desktop": true,
->>>>>>> staging
             "inherit_color_scheme": true,
             "color_scheme": "",
             "background_media": "none",
@@ -79,10 +71,7 @@
               "type": "group",
               "name": "Header",
               "settings": {
-<<<<<<< HEAD
-=======
                 "link": "",
->>>>>>> staging
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -152,15 +141,12 @@
                     "type_preset": "paragraph",
                     "width": "100%",
                     "alignment": "left",
-<<<<<<< HEAD
-=======
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
                     "color": "var(--color-foreground)",
->>>>>>> staging
                     "padding-block-start": 4,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -244,10 +230,7 @@
               "type": "group",
               "name": "Policies",
               "settings": {
-<<<<<<< HEAD
-=======
                 "link": "",
->>>>>>> staging
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -286,10 +269,7 @@
                   "type": "group",
                   "name": "Shipping policy",
                   "settings": {
-<<<<<<< HEAD
-=======
                     "link": "",
->>>>>>> staging
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -330,10 +310,7 @@
                       "settings": {
                         "icon": "truck",
                         "width": 16,
-<<<<<<< HEAD
-=======
                         "link": "",
->>>>>>> staging
                         "open_in_new_tab": false
                       },
                       "blocks": {}
@@ -374,10 +351,7 @@
                   "type": "group",
                   "name": "Return policy",
                   "settings": {
-<<<<<<< HEAD
-=======
                     "link": "",
->>>>>>> staging
                     "open_in_new_tab": false,
                     "content_direction": "row",
                     "vertical_on_mobile": false,
@@ -418,10 +392,7 @@
                       "settings": {
                         "icon": "return",
                         "width": 16,
-<<<<<<< HEAD
-=======
                         "link": "",
->>>>>>> staging
                         "open_in_new_tab": false
                       },
                       "blocks": {}
@@ -513,14 +484,6 @@
         "padding-block-end": 0
       }
     },
-<<<<<<< HEAD
-=======
-    "lookbook_product_qfr3Mt": {
-      "type": "lookbook-product",
-      "name": "Lookbook",
-      "settings": {}
-    },
->>>>>>> staging
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -589,10 +552,7 @@
             "group_zGryyP": {
               "type": "group",
               "settings": {
-<<<<<<< HEAD
-=======
                 "link": "",
->>>>>>> staging
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -663,15 +623,12 @@
                     "type_preset": "h6",
                     "width": "100%",
                     "alignment": "left",
-<<<<<<< HEAD
-=======
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
                     "color": "var(--color-foreground)",
->>>>>>> staging
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
@@ -729,14 +686,16 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "lookbook_product_4eJTKT": {
+      "type": "lookbook-product",
+      "name": "Lookbook",
+      "settings": {}
     }
   },
   "order": [
     "main",
-<<<<<<< HEAD
-=======
-    "lookbook_product_qfr3Mt",
->>>>>>> staging
+    "lookbook_product_4eJTKT",
     "product_recommendations_qggXJq"
   ]
 }
