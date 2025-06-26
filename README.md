@@ -45,3 +45,8 @@ Each Lookbook metaobject includes the following fields:
 
 ### Lookbook metaobject definition
 ![Lookbook metaobject definition](assets/lookbook_definition.png)
+
+## Reflections
+The Lookbook sections were developed to meet the functional requirements using native Shopify features. While the implementation works well for the technical brief, the styling and layout flexibility are quite basic.
+
+If I were to approach it differently, I would consider duplicating and extending existing components like the Hero or Split Sections, which offer strong layout settings. This would give merchants more control over layout, enhancing both frontend aesthetics and editor user experience within the theme editor.
