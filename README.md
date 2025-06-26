@@ -16,6 +16,11 @@ This separation improves clarity for the content manager by:
 
 While it was technically possible to replicate the same outcome using dynamic settings and reuse existing components (like the Hero or Split sections), the task explicitly required building the feature from scratch. 
 
+## How It Works
+
+On **main pages**, merchants can add the **Main Lookbook section** and choose any published Lookbook from a dropdown.
+On **product pages**, the **Product Page Lookbook section** checks if the current product is part of any Lookbook and displays them automatically — no input required from the merchant.
+
 ## Metaobject Configuration
 
 Lookbooks are configured via the **Shopify Admin** under:
@@ -27,7 +32,16 @@ Each Lookbook metaobject includes the following fields:
 - **Image or Video**
 - **List of Products**
 
-## How It Works
+## Screenshots of Metaobject configuration:
 
-On **main pages**, merchants can add the **Main Lookbook section** and choose any published Lookbook from a dropdown.
-On **product pages**, the **Product Page Lookbook section** checks if the current product is part of any Lookbook and displays them automatically — no input required from the merchant.
+### Metaobjects Dashboard
+![Metaobjects Dashboard](assets/metaobjects.png)
+
+### Lookbook entries
+![Lookbook entries](assets/entries.png)
+
+### Lookbook entry
+![Lookbook entry](assets/entry.png)
+
+### Lookbook metaobject definition
+![Lookbook metaobject definition](assets/lookbook_definition.png)
